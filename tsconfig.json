@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "types/*"
+            ]
+        },
+        "outDir": "./ts_build",
+        "allowJs": false,
+        "target": "es5",
+        "typeRoots": [
+            "node_modules/@types/"
+        ],
+        "resolveJsonModule": true,
+        "lib": [
+            "ES2015"
+        ],
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "./node_modules/**/*",
+        "./.vscode/**/*",
+        "./tests",
+        "./coverage",
+        "./jest.config.js"
+    ],
+    "types": [
+        "node",
+        "@types/statsd-client"
+    ]
+}
